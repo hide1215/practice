@@ -1,10 +1,15 @@
 package codeex11_01;
 
 public abstract class TangibleAsset{
-	String color;
+	private String color;
+	private int price;
+	private String name;
 	public TangibleAsset(String name, int price, String color) {
-	super(name, price);
 	this.color = color;
+	this.price = price;
+	this.name = name;
 	}
-	public String color() {return this.color;}
+	public String getColor() {return this.color;}
+	public int getPrice(){return this.price;}
+	public String getName(){return this.name;}
 }
